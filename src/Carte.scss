@@ -1,0 +1,60 @@
+.Carte {
+    width: clamp(200px, 40vw, 400px);
+    padding: 20px 20px 50px 20px;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: black ;
+
+    section.carte-image {
+        width: 100%;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    section.carte-info {
+        display: inline-flex;
+        flex-direction: column;
+
+        .carte-titre--conteneur {
+            display: inline-block;
+            margin: 1.5em 0;
+
+            h2.carte-titre {
+                background-color: black;
+                color: white;
+                padding: 5px;
+                border-radius: 5px;
+                display: inline;
+            }  
+        } 
+
+        .carte-date {
+            color: white;
+        }
+    }
+
+    .carte-icone {
+        border-radius: 10px;
+        padding: 5px;
+        box-sizing: content-box;
+        background-color: black;
+        cursor: pointer;
+
+        position: absolute;
+
+        &.icone-tri {
+            left: 30px;
+            top: 30px;
+        }
+
+        &.icone-plus {
+            bottom: 15px;
+            right: 15px;
+        }
+    }
+}
